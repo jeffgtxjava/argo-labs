@@ -4,11 +4,6 @@ metadata:
   name: vote
 spec:
   replicas: 5
-  template:
-    spec:
-      containers:
-      - image: schoolofdevops/vote:v5
-        name: vote
   revisionHistoryLimit: 2
   strategy:
     blueGreen: null
